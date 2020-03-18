@@ -1,0 +1,39 @@
+/* APP */
+body {
+    background-image: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-family: monospace;
+    color: #f3f0ff;
+}
+
+/* SEARCH BAR */
+
+/* WEATHER LIST */
+.weather-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-name {
+    font-family: monospace;
+    color: #f3f0ff;
+}
+
+/* WEATHER ITEM */
+.item-container {
+    border: 3px solid salmon;
+}
+
+.item-data {
+    border: 2px solid burlywood;
+}
