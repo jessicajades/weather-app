@@ -10,16 +10,18 @@ class SearchBar extends React.Component {
     onFormSubmit = e => {
         e.preventDefault();
         this.props.onFormSubmit(this.state.location);
+        this.setState({ location: "" });
     };
 
     render() {
         return (
             <form onSubmit={this.onFormSubmit}>
-                <label>Enter Location:</label>
                 <input
                     type="text"
                     value={this.state.location}
                     onChange={this.onInputChange}
+                    placeholder="Please enter location"
+                    id="search-input"
                 />
             </form>
         );
